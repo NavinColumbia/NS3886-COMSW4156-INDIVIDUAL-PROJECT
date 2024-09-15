@@ -7,7 +7,8 @@
     UNI: ns3886
     email: ns3886@columbia.edu
     branch: main 
-    Link: https://github.com/NavinColumbia/4156-Miniproject-2024-Students-Java.git
+    Link: https://github.com/NavinColumbia/NS3886-COMSW4156-INDIVIDUAL-PROJECT
+    Assignment 1 Link: https://github.com/NavinColumbia/4156-Miniproject-2024-Students-Java.git
 
 
     Individual Assignment 2: Feature Implementation and Maintenance 
@@ -45,7 +46,7 @@
                 UNI: ns3886
                 email: ns3886@columbia.edu
                 branch: main
-                Link: https://github.com/NavinColumbia/4156-Miniproject-2024-Students-Java.git
+                Link: https://github.com/NavinColumbia/NS3886-COMSW4156-INDIVIDUAL-PROJECT
                 Pull Request Has ScreenShots
 
 
