@@ -32,3 +32,10 @@ Citations:
 8. PMD Source Code Analyzer Project official Docs:
     https://docs.pmd-code.org/latest/pmd_userdocs_cli_reference.html 
     Referred to know command line arguments needed to generate pmd files
+9. Resource Not accessible issue in Github Action Job
+    https://stackoverflow.com/questions/70435286/resource-not-accessible-by-integration-on-github-post-repos-owner-repo-ac
+10. PMD Github Action:
+            https://github.com/pmd/pmd-github-action
+11. Jacoco Github Action:
+            https://github.com/cicirello/jacoco-badge-generator
+            
