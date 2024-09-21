@@ -32,9 +32,6 @@ jobs:
           generate-branches-badge: true
           jacoco-csv-file: >
             IndividualProject/target/site/jacoco/jacoco.csv
-      #- name: Run PMD Static Analysis
-      #  working-directory: ./IndividualProject
-      #  run: mvn pmd:check || true
       - uses: pmd/pmd-github-action@v2
         id: pmd
         with:
