@@ -34,11 +34,13 @@ jobs:
           reporttypes: HtmlInline;Cobertura;TextSummary
           sourcedirs: IndividualProject/src/main/java/
           title: JaCoCo code coverage report
-      - name: JaCoCoSummary
-        #working-directory: ./IndividualProject
-        run: |
-         cat coveragereport/index.html \
-         cat coveragereport/Cobertura.xml \
+      - name: Generate JaCoCo Badge
+        id: jacoco
+        uses: cicirello/jacoco-badge-generator@v2
+        with:
+          generate-branches-badge: true
+          jacoco-csv-file: >
+            IndividualProjecy/target/site/jacoco/jacoco.csv
       - name: Run PMD Static Analysis
         working-directory: ./IndividualProject
         run: mvn pmd:check || true
