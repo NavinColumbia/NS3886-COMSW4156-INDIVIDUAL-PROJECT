@@ -40,7 +40,7 @@ jobs:
         with:
           generate-branches-badge: true
           jacoco-csv-file: >
-            IndividualProjecy/target/site/jacoco/jacoco.csv
+            IndividualProject/target/site/jacoco/jacoco.csv
       - name: Run PMD Static Analysis
         working-directory: ./IndividualProject
         run: mvn pmd:check || true
