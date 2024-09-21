@@ -23,13 +23,7 @@ jobs:
       - name: Build with Maven
         id: build
         working-directory: ./IndividualProject
-        run: mvn -B package --file pom.xml
-      - name: Run JUnit tests and verify with Maven
-        working-directory: ./IndividualProject
-        run: mvn clean test package verify
-      - name: Fail build if there are violations
-        if: steps.build.outputs.violations != 0
-        run: exit 1
+        run: mvn verify
       - name: Generate JaCoCo Badge
         id: jacoco
         uses: cicirello/jacoco-badge-generator@v2
@@ -37,13 +31,8 @@ jobs:
           generate-branches-badge: true
           jacoco-csv-file: >
             IndividualProject/target/site/jacoco/jacoco.csv
-      #- name: style check
-       # id: style_check
-        #working-directory: ./IndividualProject
-        #run: mvn checkstyle:check
-      #- name: Fail build if there are violation
-        #run: exit 1
-      - uses: pmd/pmd-github-action@v2
+      - name: pmd
+        uses: pmd/pmd-github-action@v2
         id: pmd
         with:
           version: '6.55.0'
