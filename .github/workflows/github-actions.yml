@@ -1,0 +1,49 @@
+
+name: Java CI with Maven and Postman
+
+on:
+  push:
+    branches: [ "main", "dev_github_actions" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Newman
+        run: npm install -g newman
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
+      - name: Run JUnit tests with Maven
+        run: mvn clean test
+      - name: ReportGenerator
+        uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
+        with:
+          reports: IndividualProject/target/site/jacoco/jacoco.xml
+          reporttypes: HtmlInline;Cobertura;TextSummary
+          sourcedirs: IndividualProject/src/main/java/com4156/dev/individualproject
+          title: JaCoCo code coverage report
+      - name: JaCoCoSummary
+        run: cat coveragereport/Summary.txt
+      - name: Run PMD Static Analysis
+        run: mvn pmd:check || true
+      #- name: Run Postman Tests
+        #run: |
+          #cd postman
+          #newman run postman_tests.json
+
+
+
+
+
+
+
