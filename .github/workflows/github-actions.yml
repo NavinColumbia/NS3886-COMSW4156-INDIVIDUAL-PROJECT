@@ -26,7 +26,7 @@ jobs:
         run: mvn -B package --file pom.xml
       - name: Run JUnit tests with Maven
         working-directory: ./IndividualProject
-        run: mvn clean test
+        run: mvn clean test package
       - name: ReportGenerator
         uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
         with:
