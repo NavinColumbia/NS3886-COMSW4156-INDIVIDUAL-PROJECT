@@ -36,7 +36,9 @@ jobs:
           title: JaCoCo code coverage report
       - name: JaCoCoSummary
         working-directory: ./IndividualProject
-        run: cat coveragereport/Summary.txt
+        run: |
+         cat coveragereport/index.html \
+         cat coveragereport/Cobertura.xml \
       - name: Run PMD Static Analysis
         working-directory: ./IndividualProject
         run: mvn pmd:check || true
