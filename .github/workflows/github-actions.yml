@@ -32,7 +32,7 @@ jobs:
         with:
           reports: IndividualProject/target/site/jacoco/jacoco.xml
           reporttypes: HtmlInline;Cobertura;TextSummary
-          sourcedirs: IndividualProject/src/main/java/com4156/dev/individualproject
+          sourcedirs: IndividualProject/src/main/java/
           title: JaCoCo code coverage report
       - name: JaCoCoSummary
         working-directory: ./IndividualProject
