@@ -35,7 +35,7 @@ jobs:
           sourcedirs: IndividualProject/src/main/java/
           title: JaCoCo code coverage report
       - name: JaCoCoSummary
-        working-directory: ./IndividualProject
+        #working-directory: ./IndividualProject
         run: |
          cat coveragereport/index.html \
          cat coveragereport/Cobertura.xml \
