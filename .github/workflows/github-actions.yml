@@ -1,5 +1,5 @@
 
-name: Java CI with Maven and Postman
+name: Github Actions NS3886
 
 on:
   push:
@@ -21,11 +21,9 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build with Maven
+        id: build
         working-directory: ./IndividualProject
-        run: mvn -B package --file pom.xml
-      - name: Run JUnit tests with Maven
-        working-directory: ./IndividualProject
-        run: mvn clean test package
+        run: mvn verify
       - name: Generate JaCoCo Badge
         id: jacoco
         uses: cicirello/jacoco-badge-generator@v2
@@ -33,7 +31,8 @@ jobs:
           generate-branches-badge: true
           jacoco-csv-file: >
             IndividualProject/target/site/jacoco/jacoco.csv
-      - uses: pmd/pmd-github-action@v2
+      - name: pmd
+        uses: pmd/pmd-github-action@v2
         id: pmd
         with:
           version: '6.55.0'
