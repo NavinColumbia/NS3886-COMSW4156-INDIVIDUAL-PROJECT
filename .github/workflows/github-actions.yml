@@ -3,7 +3,7 @@ name: Java CI with Maven and Postman
 
 on:
   push:
-    branches: ["dev_github_actions" ]
+    branches: ["dev_github_actions","github_actions_to_merge"]
   pull_request:
     branches: [ "main" ]
 
