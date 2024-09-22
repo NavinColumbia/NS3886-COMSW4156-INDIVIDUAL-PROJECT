@@ -1,5 +1,6 @@
 package dev.coms4156.project.individualproject;
 
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -13,21 +14,31 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
-/** Takes Care of testing methods in Department Class. */
+/**
+ * Takes Care of testing methods in Department Class.
+ */
 @SpringBootTest
 @ContextConfiguration
 public class DepartmentTest {
 
-  /** This will be a mapping retrieved from data,txt. */
+  /**
+   * This will be a mapping retrieved from data,txt.
+   */
   public static Map<String, Department> departmentMapping;
 
-  /** This is a testcase from data.txt. */
+  /**
+   * This is a testcase from data.txt.
+   */
   public static Department testDept;
 
-  /** This is a testcase created by calling constructor. */
+  /**
+   * This is a testcase created by calling constructor.
+   */
   public static Department testDept2;
 
-  /** sets the three variables as above mentioned. */
+  /**
+   * sets the three variables as above mentioned.
+   */
   @BeforeAll
   public static void setupDeptForTesting() {
 
@@ -81,6 +92,15 @@ public class DepartmentTest {
     testDept2.addPersonToMajor();
     testDept2.dropPersonFromMajor();
     assertEquals(1, testDept2.getNumberOfMajors());
+  }
+
+  @Test
+  public void testAddNullCourse() {
+
+    NullPointerException exception =
+        assertThrows(NullPointerException.class, () -> testDept2.addCourse("rand123", null));
+    assertEquals("Course is null", exception.getMessage());
+
   }
 
   @Test

@@ -85,6 +85,16 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>appengine-maven-plugin</artifactId>
+				<version>2.8.1</version>
+				<configuration>
+					<projectId>ns3886-adv-swe-individual-prj</projectId>
+					<version>v1</version>
+					<promote>false</promote>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>3.6.0</version>

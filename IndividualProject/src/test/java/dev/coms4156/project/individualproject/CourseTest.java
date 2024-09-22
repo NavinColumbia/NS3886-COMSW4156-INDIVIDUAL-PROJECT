@@ -12,12 +12,16 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
-/** Takes Care of testing methods in Course Class. */
+/**
+ * Takes Care of testing methods in Course Class.
+ */
 @SpringBootTest
 @ContextConfiguration
 public class CourseTest {
 
-  /** Sets up both test courses - one created, one from data.txt. */
+  /**
+   * Sets up both test courses - one created, one from data.txt.
+   */
   @BeforeAll
   public static void setupCourseForTesting() {
     String[] times = {"11:40-12:55", "4:10-5:25", "10:10-11:25", "2:40-3:55"};
@@ -113,12 +117,18 @@ public class CourseTest {
         " Course not created, Arguments should not be null or <=0 ", exception.getMessage());
   }
 
-  /** This is a testcase created by calling constructor. */
+  /**
+   * This is a testcase created by calling constructor.
+   */
   public static Course testCourse1;
 
-  /** This is a testcase from data.txt. */
+  /**
+   * This is a testcase from data.txt.
+   */
   public static Course testCourse2;
 
-  /** This will be a mapping retrieved from data,txt. */
+  /**
+   * This will be a mapping retrieved from data,txt.
+   */
   public static Map<String, Department> departmentMapping;
 }

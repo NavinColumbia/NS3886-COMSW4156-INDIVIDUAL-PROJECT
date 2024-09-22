@@ -7,7 +7,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
-/** This class. */
+/**
+ * This class.
+ */
 @SpringBootTest
 @ContextConfiguration
 public class IndividualProjectApplicationTest {
@@ -23,7 +25,7 @@ public class IndividualProjectApplicationTest {
   public void setup() {
     assertAll(
         () -> {
-          testob.run(new String[] {"setup"});
+          testob.run(new String[]{"setup"});
         });
   }
 
@@ -31,7 +33,7 @@ public class IndividualProjectApplicationTest {
   public void start() {
     assertAll(
         () -> {
-          testob.run(new String[] {"start"});
+          testob.run(new String[]{"start"});
         });
   }
 
@@ -63,7 +65,7 @@ public class IndividualProjectApplicationTest {
   public void runtest() {
     assertAll(
         () -> {
-          testob.main(new String[] {"setup"});
+          testob.main(new String[]{"setup"});
         });
   }
 

@@ -8,14 +8,16 @@ import java.io.ObjectOutputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-/** This class represents a file-based database containing department mappings. */
+/**
+ * This class represents a file-based database containing department mappings.
+ */
 public class MyFileDatabase {
 
   /**
    * Constructs a MyFileDatabase object and loads up the data structure with the contents of the
    * file.
    *
-   * @param flag used to distinguish mode of database
+   * @param flag     used to distinguish mode of database
    * @param filePath the path to the file containing the entries of the database
    */
   public MyFileDatabase(int flag, String filePath) {
@@ -91,9 +93,13 @@ public class MyFileDatabase {
     return result.toString();
   }
 
-  /** The path to the file containing the database entries. */
+  /**
+   * The path to the file containing the database entries.
+   */
   private String filePath;
 
-  /** The mapping of department names to Department objects. */
+  /**
+   * The mapping of department names to Department objects.
+   */
   private Map<String, Department> departmentMapping;
 }

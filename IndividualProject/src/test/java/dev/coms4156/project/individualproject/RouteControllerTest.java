@@ -14,11 +14,15 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
-/** This class contains all the API routes for the system. */
+/**
+ * This class contains all the API routes for the system.
+ */
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(RouteController.class)
 public class RouteControllerTest {
-  @Autowired private MockMvc mvc;
+
+  @Autowired
+  private MockMvc mvc;
 
   @Test
   void retrieveCoursesTest() throws Exception {
@@ -253,7 +257,7 @@ public class RouteControllerTest {
         .andExpect(status().isNotFound());
     mvc.perform(patch("/changeCourseLocation?deptCode=abc&courseCode=0&location=abc"))
         .andExpect(status().isNotFound());
-    mvc.perform(patch("/enrollStudentInCourseTest?deptCode=abc&courseCode=0"))
+    mvc.perform(patch("/enrollStudentInCourse?deptCode=abc&courseCode=0"))
         .andExpect(status().isNotFound());
   }
 }
