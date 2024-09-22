@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 /** This class contains all the API routes for the system. */
 @RestController
 public class RouteController {
+
   /**
    * Redirects to the homepage.
    *

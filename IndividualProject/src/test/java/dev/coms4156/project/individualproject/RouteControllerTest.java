@@ -1,23 +1,28 @@
 package dev.coms4156.project.individualproject;
 
 import static org.hamcrest.Matchers.containsString;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-/** This class contains all the API routes for the system. */
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.test.web.servlet.MockMvc;
+
+/**
+ * This class contains all the API routes for the system.
+ */
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(RouteController.class)
 public class RouteControllerTest {
-  @Autowired private MockMvc mvc;
+
+  @Autowired
+  private MockMvc mvc;
 
   @Test
   void retrieveCoursesTest() throws Exception {

@@ -14,8 +14,8 @@ public class Course implements Serializable {
    *
    * @param instructorName The name of the instructor teaching the course.
    * @param courseLocation The location where the course is held.
-   * @param timeSlot The time slot of the course.
-   * @param capacity The maximum number of students that can enroll in the course.
+   * @param timeSlot       The time slot of the course.
+   * @param capacity       The maximum number of students that can enroll in the course.
    */
   public Course(String instructorName, String courseLocation, String timeSlot, int capacity) {
     if (capacity <= 0 || courseLocation == null || timeSlot == null || instructorName == null) {
@@ -142,20 +142,31 @@ public class Course implements Serializable {
     return enrollmentCapacity <= this.enrolledStudentCount;
   }
 
-  @Serial private static final long serialVersionUID = 123456L;
+  @Serial
+  private static final long serialVersionUID = 123456L;
 
-  /** Total number of students allowed to enroll in the course. */
+  /**
+   * Total number of students allowed to enroll in the course.
+   */
   private final int enrollmentCapacity;
 
-  /** Number of students enrolled in the course. */
+  /**
+   * Number of students enrolled in the course.
+   */
   private int enrolledStudentCount;
 
-  /** Location of the course. */
+  /**
+   * Location of the course.
+   */
   private String courseLocation;
 
-  /** Name of Course Instructor. */
+  /**
+   * Name of Course Instructor.
+   */
   private String instructorName;
 
-  /** Time Slot of the course . */
+  /**
+   * Time Slot of the course .
+   */
   private String courseTimeSlot;
 }

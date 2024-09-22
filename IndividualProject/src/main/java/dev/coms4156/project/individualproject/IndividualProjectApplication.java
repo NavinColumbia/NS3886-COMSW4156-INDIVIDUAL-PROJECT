@@ -55,7 +55,9 @@ public class IndividualProjectApplication implements CommandLineRunner {
     saveData = false;
   }
 
-  /** Allows for data to be reset in event of errors. */
+  /**
+   * Allows for data to be reset in event of errors.
+   */
   public void resetDataFile() {
     String[] times = {"11:40-12:55", "4:10-5:25", "10:10-11:25", "2:40-3:55"};
     String[] locations = {"417 IAB", "309 HAV", "301 URIS"};
@@ -291,9 +293,13 @@ public class IndividualProjectApplication implements CommandLineRunner {
     }
   }
 
-  /** Database Instance. */
+  /**
+   * Database Instance.
+   */
   public static MyFileDatabase myFileDatabase;
 
-  /** Content saved to file if set to true . */
+  /**
+   * Content saved to file if set to true .
+   */
   private static boolean saveData = true;
 }

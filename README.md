@@ -10,6 +10,44 @@
     Link: https://github.com/NavinColumbia/NS3886-COMSW4156-INDIVIDUAL-PROJECT
     Assignment 1 Link: https://github.com/NavinColumbia/4156-Miniproject-2024-Students-Java.git
 
+    Individual Assignment 3:
+        Pre-Requisite:
+            Please Follow Basic Instructions under 'Individual Assignment 1: Testing and Bug Fixing'
+            in README.md for setup and review
+        
+        1)Continuous Integration Loop:
+                .github/workflows/github-actions.yml 
+        
+        2) Maintaining the Codebase
+                Code Coverage has been improved to: 
+                JaCoCo Test Coverage Summary
+                    Coverage: 95.136%
+                    Branches: 91.525%
+                
+        3)
+        Google Cloud Deployment:
+                
+                Install Google Cloud sdk : 
+                        brew install --cask google-cloud-sdk
+                Login and basic setup:
+                        gcloud init
+                Create a new Project:
+                        visit https://console.cloud.google.com/projectselector2 and create a project (note your project id)
+                Setup Billing:
+                        setup billing : https://console.cloud.google.com/billing
+                
+                pom.xml:
+                        under <appengine-maven-plugin> set your project_id
+                Run in terminal:
+                        cd IndividualProject
+                        gcloud config set project ${{PROJECT_ID}}
+                        gcloud app deploy
+                        gcloud app browse
+
+                 GCP Demo:
+                        https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
+
+
 
     Individual Assignment 2: Feature Implementation and Maintenance 
          
