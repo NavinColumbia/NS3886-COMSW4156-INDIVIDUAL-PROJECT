@@ -77,8 +77,8 @@ public class Department implements Serializable {
    * @param course The Course object to add.
    */
   public void addCourse(String courseId, Course course) {
-    if (courses == null) {
-      throw new NullPointerException("Courses is null");
+    if (course == null) {
+      throw new NullPointerException("Course is null");
     }
     this.courses.put(courseId, course);
   }

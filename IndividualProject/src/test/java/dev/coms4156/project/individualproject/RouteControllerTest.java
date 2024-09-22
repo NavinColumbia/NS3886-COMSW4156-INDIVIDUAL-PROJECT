@@ -1,18 +1,17 @@
 package dev.coms4156.project.individualproject;
 
 import static org.hamcrest.Matchers.containsString;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /** This class contains all the API routes for the system. */
 @ExtendWith(SpringExtension.class)
@@ -253,7 +252,7 @@ public class RouteControllerTest {
         .andExpect(status().isNotFound());
     mvc.perform(patch("/changeCourseLocation?deptCode=abc&courseCode=0&location=abc"))
         .andExpect(status().isNotFound());
-    mvc.perform(patch("/enrollStudentInCourseTest?deptCode=abc&courseCode=0"))
+    mvc.perform(patch("/enrollStudentInCourse?deptCode=abc&courseCode=0"))
         .andExpect(status().isNotFound());
   }
 }

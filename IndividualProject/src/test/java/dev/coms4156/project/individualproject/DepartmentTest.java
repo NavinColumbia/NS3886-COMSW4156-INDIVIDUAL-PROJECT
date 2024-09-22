@@ -1,13 +1,13 @@
 package dev.coms4156.project.individualproject;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.HashMap;
 import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -81,6 +81,15 @@ public class DepartmentTest {
     testDept2.addPersonToMajor();
     testDept2.dropPersonFromMajor();
     assertEquals(1, testDept2.getNumberOfMajors());
+  }
+
+  @Test
+  public void testAddNullCourse() {
+
+    NullPointerException exception = 
+    assertThrows(NullPointerException.class,()-> testDept2.addCourse("rand123", null));
+    assertEquals("Course is null", exception.getMessage());
+
   }
 
   @Test
