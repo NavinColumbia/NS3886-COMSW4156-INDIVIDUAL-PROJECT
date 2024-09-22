@@ -3,7 +3,12 @@ name: Github Actions NS3886
 
 on:
   push:
-    branches: ["dev_github_actions","github_actions_to_merge"]
+    branches:    
+      - '*'         # matches every branch that doesn't contain a '/'
+      - '*/*'       # matches every branch containing a single '/'
+      - '**'        # matches every branch
+      - '!master'   # excludes master
+      - '!main'     # excludes main
   pull_request:
     branches: [ "main" ]
 
