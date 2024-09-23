@@ -166,7 +166,7 @@ gcloud app browse
 
 ### GCP Demo :
 &emsp;&emsp; Click on the thumbnail below:
-&emsp;&emsp;[![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/th8dnst3q7a87kize4o7s/thumbnail_2.png?rlkey=pr7k4ayvxemkzwc3tcvrmjm4y&st=96f1j01m&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) \.
+&emsp;&emsp;[![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/th8dnst3q7a87kize4o7s/thumbnail_2.png?rlkey=pr7k4ayvxemkzwc3tcvrmjm4y&st=96f1j01m&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) <br /> 
 &emsp;  &emsp; or visit :
 &emsp;&emsp; https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
 
@@ -176,66 +176,30 @@ gcloud app browse
 
 &emsp; 2.Download the following JSON:    
 &emsp;  &emsp; [click here to download](https://www.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=x1b8bvoj&dl=0)        
-&emsp;  &emsp; or visit  &emsp;&emsp; https://www.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=x1b8bvoj&dl=0
+&emsp;  &emsp; or visit <br/>
+&emsp;&emsp; https://www.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=x1b8bvoj&dl=0
 &nbsp;
 
 &emsp; 3.Go to 'my workspace' in Postman, click 'import', and select the json
-
 &nbsp;
 
-&emsp; Please Note that I might have removed my project from https://ns3886-adv-swe-individual-prj.uk.r.appspot.com/ at the time you are reading this.<br/>.
-&emsp; So please host your own copy and and update the URL in the postman tests accordingly.</br>
-&emsp;Alternatively, you can run the instance locally , and test it.
+&emsp;Please Note that I might have removed my project from <br />
+&emsp;https://ns3886-adv-swe-individual-prj.uk.r.appspot.com/ <br />
+&emsp;at the time you are reading this.<br/>
+
+&emsp;So please host your own copy and and update the URL in the postman tests accordingly.</br>
+&emsp;Alternatively, you can run the instance locally , and test it via postman.
 
 # Continuous Intergration
-&emsp; Workflows can be found under .github/workflows/github-actions.yml <br />
-&emsp;&emsp; The workflow triggers on push events, and pulls to main branch
-&emsp;&emsp; The build is failed in case of pmd/style check violation
-&emsp;&emsp; Test coverage badge is generated for each run.
-&emsp;&emsp; Go to Actions-> All workflows and click on the most recent workflow. click build for further details.
+&emsp;&emsp; Workflows can be found under .github/workflows/github-actions.yml. <br />
+&emsp;&emsp; The workflow triggers on push events, and pulls to main branch. <br />
+&emsp;&emsp; The build is failed in case of pmd/style check violation. <br />
+&emsp;&emsp; Test coverage badge is generated for each run. <br />
+&emsp;&emsp; Go to Actions-> All workflows and click on the most recent workflow. click build for further details. <br />
 
 
 
-
-
-    Individual Assignment 3:
-        Pre-Requisite:
-            Please Follow Basic Instructions under 'Individual Assignment 1: Testing and Bug Fixing'
-            in README.md for setup and review
-        
-        1)Continuous Integration Loop:
-                .github/workflows/github-actions.yml 
-        
-        2) Maintaining the Codebase
-                Code Coverage has been improved to: 
-                JaCoCo Test Coverage Summary
-                    Coverage: 95.136%
-                    Branches: 91.525%
-                
-        3)
-        Google Cloud Deployment:
-                
-                Install Google Cloud sdk : 
-                        brew install --cask google-cloud-sdk
-                Login and basic setup:
-                        gcloud init
-                Create a new Project:
-                        visit https://console.cloud.google.com/projectselector2 and create a project (note your project id)
-                Setup Billing:
-                        setup billing : https://console.cloud.google.com/billing
-                
-                pom.xml:
-                        under <appengine-maven-plugin> set your project_id
-                Run in terminal:
-                        cd IndividualProject
-                        gcloud config set project ${{PROJECT_ID}}
-                        gcloud app deploy
-                        gcloud app browse
-
-
-GCP Demo : [click here on this link for gcp demo](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) or visit https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
-
-
+#Old ReadMe(Assignment 1,2):
 
     Individual Assignment 2: Feature Implementation and Maintenance 
          
