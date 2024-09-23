@@ -9,8 +9,10 @@
 ##### Link: https://github.com/NavinColumbia/NS3886-COMSW4156-INDIVIDUAL-PROJECT
 ##### Assignment 1 Link: https://github.com/NavinColumbia/4156-Miniproject-2024-Students-Java.git
 ##### branch: main
-##### Demo: [![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/16704dnmlhk7w659mkxnj/thumbnail.png?rlkey=uw3u9r054eefi1fm19xcs3gpn&st=g0uy6qbj&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0)
-
+##### Demo: 
+Click on the thumbnail below [![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/16704dnmlhk7w659mkxnj/thumbnail.png?rlkey=uw3u9r054eefi1fm19xcs3gpn&st=g0uy6qbj&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0)
+<br />
+or visit https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
 
 
 # Building and Running a Local Instance
