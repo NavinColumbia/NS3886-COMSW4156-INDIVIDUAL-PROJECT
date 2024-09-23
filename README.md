@@ -1,61 +1,62 @@
-  # COMS W4156 Advanced Software Engineering
+# COMS W4156 Advanced Software Engineering
 
-  ## Mini Project 2024
+### Mini Project 2024
 
-  ## Name: Navinashok Swaminathan
-  ## UserName: NavinColumbia
-  ## UNI: ns3886
-  ## email: ns3886@columbia.edu
-  ### branch: main 
-  ### Link: https://github.com/NavinColumbia/NS3886-COMSW4156-INDIVIDUAL-PROJECT
-  ### Assignment 1 Link: https://github.com/NavinColumbia/4156-Miniproject-2024-Students-Java.git
-  ### DEMO: [click here on this link for gcp demo](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0)
+### Name: Navinashok Swaminathan
+### UserName: NavinColumbia
+### UNI: ns3886
+### email: ns3886@columbia.edu
+##### Link: https://github.com/NavinColumbia/NS3886-COMSW4156-INDIVIDUAL-PROJECT
+##### Assignment 1 Link: https://github.com/NavinColumbia/4156-Miniproject-2024-Students-Java.git
+##### branch: main
+##### Demo: [Click here on this link for GCP demo](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0)
 
 
 
-# Building and Running a Local Instance 
-    
- ## Install java( preferred: 17/21):
-   https://www.oracle.com/java/technologies/downloads/#java21
+# Building and Running a Local Instance
 
- ## Install Brew:
-   Package Manager for Mac 
-     Refer https://brew.sh/
-              or do:
-                ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD install.sh)" .```
+### Install java( preferred: 17/21):
+https://www.oracle.com/java/technologies/downloads/#java21
 
- ## Install maven:
-   for mac:
-        `brew install maven`
-   
- ## Git Clone Repo :
+### Install Brew:
+Package Manager for Mac
+Refer https://brew.sh/ or do:  
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD install.sh)" .
+```
+
+### Install maven:
+For Mac:
+`brew install maven`
+
+### Git Clone Repo :
         `git clone https://github.com/NavinColumbia/NS3886-COMSW4156-INDIVIDUAL-PROJECT.git`
 
- ## Set-up:
-   if data.txt doesn't exist in IndividualProject:
-                ensure port 8080 is unoccupied
-                        ```
-                        cd IndividualProject
-                        mvn spring-boot:run -Dspring-boot.run.arguments="setup"
-                        ```
-        Wait till "System Setup" shows up
-        cancel above/any applications running in port 8080 (press control+c)
-        now data.txt must exist in IndividualProject
+### Set-Up:
+if data.txt does not exist in IndividualProject:
+&emsp; ensure port 8080 is unoccupied
+```
+cd IndividualProject
+mvn spring-boot:run -Dspring-boot.run.arguments="setup"
+```
+Wait till "System Setup" shows up
+Cancel above/any applications running in port 8080 (press control+c)
+Now data.txt must exist in IndividualProject
 
- ## Build:
-    
+### Build:
+
          ```
          cd IndividualProject
          mvn clean verify
          ```
 
- ## Running The Application:
+### Running The Application:
         ```
             cd IndividualProject 
             mvn spring-boot:run
         ```
-      wait till "Start up" shows up
-      application must now be Running In: http://localhost:8080/
+      Wait till "Start up" shows up
+      Application must now be Running In: http://localhost:8080/
 
 
 
@@ -64,76 +65,114 @@
 
 # Style Checking
 
-   Run checkstyle:
-            ```
-            cd IndividualProject
-            mvn checkstyle:check
-            ```
-   check console output for errors/warnings/violations.
+Run checkstyle:
+```
+cd IndividualProject
+mvn checkstyle:check
+```
+Check console output for errors/warnings/violations.
 
 
 # Code Documentation
-   Generate Javadocs
-        ```
-        cd IndividualProject
-        mvn javadoc:javadoc
-        ```
-   open in browser ./IndividualProject/target/site/apidocs/index.html
+Generate Javadocs
+```
+cd IndividualProject
+mvn javadoc:javadoc
+```
+Open in browser ./IndividualProject/target/site/apidocs/index.html
 
 # Static Code Analysis
-   PMD(mentioned in assignment) was the static analyzer used.
-        Installing and running PMD:
-            Install pmd:
-                ```brew install pmd```
-            Run PMD:
-                ```
-                    cd IndividualProject
-                    pmd check -d src/main/java -R rulesets/java/quickstart.xml -f text -r "pmdres.txt"
-                    pmd check -d src/main/java -R rulesets/java/quickstart.xml -f html -r "pmdres.html"
-                ```
-        Find file named pmdres.html inside folder 'IndividualProject' ,open the html with any browse. or check 'pmdres.txt'
-         An empty content in either of the file mean no further suggestions.
-        
-   
+PMD(mentioned in assignment) was the static analyzer used.
+&nbsp;
+
+&emsp;Installing and running PMD:
+&nbsp;
+
+&emsp;&emsp; Install pmd:
+``` 
+brew install pmd
+```
+&emsp;&emsp;Run PMD:
+```
+    cd IndividualProject
+    pmd check -d src/main/java -R rulesets/java/quickstart.xml -f text -r "pmdres.txt"
+    pmd check -d src/main/java -R rulesets/java/quickstart.xml -f html -r "pmdres.html"
+```
+&emsp;&emsp;Find file named pmdres.html inside folder 'IndividualProject'.
+&emsp;&emsp;Open the html with any browser or check 'pmdres.txt'.
+&emsp;&emsp;An empty content in either of the file mean no further suggestions.
+
+
 # Running Tests and Jacoco Report
-   As part of `mvn clean verify` , tests under ./IndividualProject/src/test/java must have been executed.
-    Test Reports : 
-        find '.txt' files under 'IndividualProject/target/surefire-reports/' to view test results
-    Jacoco Report : 
-        find file 'index.html' under 'IndividualProject/target/site/jacoco/' and open with any browser to view jacoco results
+As part of `mvn clean verify` , tests under ./IndividualProject/src/test/java must have been executed.
+
+&nbsp;
+
+###&emsp;Test Reports
+
+&emsp; &emsp;Find '.txt' files under 'IndividualProject/target/surefire-reports/' to view test results
+
+&nbsp;
+
+###&emsp;Jacoco Report
+
+&emsp;&emsp;Find file 'index.html' under 'IndividualProject/target/site/jacoco/' and open with any browser to view jacoco results
 
 # Google Cloud Deployment
-   Setup Billing For Your Account:
-            visit https://console.cloud.google.com/billing, Login with google sign-in and enter your payment details
-   Create a new Project in Google Cloud Console:
-            visit https://console.cloud.google.com/projectselector2
-            and create a project (note your project id)
-   Install Google Cloud sdk :
-            ```brew install --cask google-cloud-sdk```
-   Login and basic setup:
-            Follow The steps after entering below in terminal
-                ```gcloud init```
-   Update pom.xml:
-                under <appengine-maven-plugin> set your project_id in pom to match the one in google cloud
-                        ```
-                        cd IndividualProject
-                        gcloud config set project ${{PROJECT_ID}}
-                        gcloud app deploy
-                        gcloud app browse
-                         ```
-   GCP Demo : [click here on this link for gcp demo](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) or visit https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
+### Setup Billing For Your Account:
+&emsp;&emsp;visit https://console.cloud.google.com/billing, <br />
+&emsp;&emsp;Login with google sign-in and enter your payment details
+&nbsp;
+
+###Create a new Project in Google Cloud Console:
+&emsp;&emsp;visit https://console.cloud.google.com/projectselector2
+&emsp;&emsp; and create a project (note your project id)
+&nbsp;
+
+###Install Google Cloud sdk :
+```
+brew install --cask google-cloud-sdk
+```
+&nbsp;
+
+###Login and basic setup:
+&emsp;&emsp;Follow The steps after entering below in terminal
+```
+gcloud init
+```
+&nbsp;
+
+###Update pom.xml:
+&emsp;&emsp;under &lt;appengine-maven-plugin&gt; set your project_id in pom to match the one in google cloud.
+```
+cd IndividualProject
+gcloud config set project ${{PROJECT_ID}}
+gcloud app deploy
+gcloud app browse
+ ```
+&nbsp;
+
+###GCP Demo :
+&emsp;&emsp;[click here on this link for gcp demo](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) \.
+&emsp;  &emsp; or visit :
+&emsp;&emsp; https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
 
 # Testing EndPoint With Postman
-   Install Postman  (https://www.postman.com/)
-   
-   Download The following JSON:    
-        [click here to download](https://www.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=x1b8bvoj&dl=0)        
-        or visit https://www.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=x1b8bvoj&dl=0
-   Go to 'my workspace' in Postman, click 'import', and select the json  
-   
-   Please Note that I might have removed my project from https://ns3886-adv-swe-individual-prj.uk.r.appspot.com/ at the time you are reading this
-    So please host your own copy and and update the URL in the postman tests accordingly
-    Alternatively, you can run the instance locally , and test it.
+&emsp; 1.Install Postman  (https://www.postman.com/)
+&nbsp;
+
+&emsp; 2.Download the following JSON:    
+&emsp;  &emsp; [click here to download](https://www.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=x1b8bvoj&dl=0)        
+&emsp;  &emsp; or visit  &emsp;&emsp; https://www.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=x1b8bvoj&dl=0
+&nbsp;
+
+&emsp; 3.Go to 'my workspace' in Postman, click 'import', and select the json
+
+&nbsp;
+
+&emsp; Please Note that I might have removed my project from https://ns3886-adv-swe-individual-prj.uk.r.appspot.com/ at the time you are reading this.<br/>.
+&emsp; So please host your own copy and and update the URL in the postman tests accordingly.</br>
+&emsp;Alternatively, you can run the instance locally , and test it.
 
 
 
@@ -174,7 +213,7 @@
                         gcloud app browse
 
 
-  GCP Demo : [click here on this link for gcp demo](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) or visit https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
+GCP Demo : [click here on this link for gcp demo](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) or visit https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
 
 
 
