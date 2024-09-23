@@ -197,8 +197,8 @@ gcloud app browse
 &emsp; &emsp;https://ns3886-adv-swe-individual-prj.uk.r.appspot.com/ <br />
 &emsp; &emsp;at the time you are reading this.<br/>
 
-&emsp; &emsp;So please host your own copy and and update the URL in the postman tests accordingly.</br>
-&emsp; &emsp;Alternatively, you can run the instance locally , and test it via postman.
+&emsp; &emsp;So please host your own copy and and update the URL in the postman tests accordingly.<br />
+&emsp; &emsp;Alternatively, you can run the instance locally , and test it via postman.<br />
 On import, tests should be available as follows:
 ![postman_ss](https://dl.dropbox.com/scl/fi/cw99dgetunltokmqm4vs9/postman.png?rlkey=bayfkdrthrqu3oa1r6acb4s99&st=ulae5haf&dl=0)
 
