@@ -112,15 +112,15 @@ As part of `mvn clean verify` , tests under ./IndividualProject/src/test/java mu
 &nbsp;
 
 ### Test Reports
-&emsp; &emsp; you can run mvn clean test and view console output <br />
-&emsp; &emsp;From the previously run `mvn clean verify`, find '.txt' files under 'IndividualProject/target/surefire-reports/' to view test results
+From the previously run `mvn clean verify`, find '.txt' files under 'IndividualProject/target/surefire-reports/' to view test results <br/>
+Or you can run mvn clean test and view console output <br />
 ![All tests ran successfully](https://dl.dropbox.com/scl/fi/3edd1mr4axj33al47mvjx/tests.png?rlkey=ucqo7kama387f0dzzihrklxm1&st=9sj7fo6m&dl=0)
 &nbsp;
 
 ### Jacoco Report
-&emsp; &emsp;you can run mvn clean test package or <br />
-&emsp;&emsp;From the previously run `mvn clean verify` <br />
-&emsp;&emsp;Find file 'index.html' under 'IndividualProject/target/site/jacoco/' and open with any browser to view jacoco results
+From the previously run `mvn clean verify` <br />
+&emsp;&emsp;Find file 'index.html' under 'IndividualProject/target/site/jacoco/' and<br />
+Open with any browser to view jacoco results
 ![jacoco report shows >90% coverage](https://dl.dropbox.com/scl/fi/v84lsix7x2dcwfpn3tyb8/jacoco.png?rlkey=gicmg9d1c2h428hm4tlqc11ia&st=8jeshnt6&dl=0)
 
 
@@ -150,7 +150,7 @@ gcloud init
 &nbsp;
 
 ### Update pom.xml:
-&emsp;&emsp;under &lt;appengine-maven-plugin&gt; set your project_id in pom to match the one in google cloud.
+&emsp;&emsp;Under &lt;appengine-maven-plugin&gt; set your project_id in pom to match the one in google cloud.
 
 ### Set app.yaml
 &emsp;&emsp;Update app.yaml under ./IndividualProjects.Set entry point to target jar, and preferred java version.
@@ -167,7 +167,7 @@ gcloud app browse
 ### GCP Demo :
 &emsp;&emsp; Click on the thumbnail below:
 &emsp;&emsp;[![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/th8dnst3q7a87kize4o7s/thumbnail_2.png?rlkey=pr7k4ayvxemkzwc3tcvrmjm4y&st=96f1j01m&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) <br /> 
-&emsp;  &emsp; or visit :
+&emsp;  &emsp; or visit :<br />
 &emsp;&emsp; https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
 
 # Testing EndPoint With Postman
@@ -183,12 +183,12 @@ gcloud app browse
 &emsp; 3.Go to 'my workspace' in Postman, click 'import', and select the json
 &nbsp;
 
-&emsp;Please Note that I might have removed my project from <br />
-&emsp;https://ns3886-adv-swe-individual-prj.uk.r.appspot.com/ <br />
-&emsp;at the time you are reading this.<br/>
+&emsp; &emsp;Please Note that I might have removed my project from <br />
+&emsp; &emsp;https://ns3886-adv-swe-individual-prj.uk.r.appspot.com/ <br />
+&emsp; &emsp;at the time you are reading this.<br/>
 
-&emsp;So please host your own copy and and update the URL in the postman tests accordingly.</br>
-&emsp;Alternatively, you can run the instance locally , and test it via postman.
+&emsp; &emsp;So please host your own copy and and update the URL in the postman tests accordingly.</br>
+&emsp; &emsp;Alternatively, you can run the instance locally , and test it via postman.
 
 # Continuous Intergration
 &emsp;&emsp; Workflows can be found under .github/workflows/github-actions.yml. <br />
@@ -196,10 +196,17 @@ gcloud app browse
 &emsp;&emsp; The build is failed in case of pmd/style check violation. <br />
 &emsp;&emsp; Test coverage badge is generated for each run. <br />
 &emsp;&emsp; Go to Actions-> All workflows and click on the most recent workflow. click build for further details. <br />
+sample ss of a workflow:
+![sample image](https://www.dropbox.com/scl/fi/56s6xn52voz6qh7waae4g/ci.png?rlkey=75qgpu1syixk51kjowqj5qzoc&st=8jfb8gfe&dl=0)
+
+# Honesty
+Please find honesty.txt at the root of the directory
+
+# Citations
+Please find citations.txt at the root of the directory
 
 
-
-#Old ReadMe(Assignment 1,2):
+# Old ReadMe(Assignment 1,2):
 
     Individual Assignment 2: Feature Implementation and Maintenance 
          
