@@ -16,10 +16,10 @@ or visit https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp
 
 
 ## Note About HyperLinks:
-Links in this ReadMe , are from dropbox. <br />
-'www' urls are purely for view/download purposes
-Replace 'www'' with 'dl' in the event that expected file format for any sort of processing is required <br />
-Say for example to import json for postman directly using the URL  <br />
+Links to videos/images in this ReadMe , are from dropbox. <br />
+'www' urls are purely for view/download purposes. <br />
+Replace 'www' with 'dl' in the event that an expected file format is required for any sort of processing<br />
+Say for example to import json for postman directly using the URL : <br />
 &emsp;Use https://dl.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=6iclsah3&dl=0 <br />
 &emsp;Instead of https://www.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=6iclsah3&dl=0 <br />
 
@@ -199,6 +199,8 @@ gcloud app browse
 
 &emsp; &emsp;So please host your own copy and and update the URL in the postman tests accordingly.</br>
 &emsp; &emsp;Alternatively, you can run the instance locally , and test it via postman.
+On import, tests should be available as follows:
+![postman_ss](https://dl.dropbox.com/scl/fi/cw99dgetunltokmqm4vs9/postman.png?rlkey=bayfkdrthrqu3oa1r6acb4s99&st=ulae5haf&dl=0)
 
 # Continuous Intergration
 &emsp;&emsp; Workflows can be found under .github/workflows/github-actions.yml. <br />
