@@ -10,7 +10,7 @@ on:
       - '!master'   # excludes master
       - '!main'     # excludes main
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main","deployment"  ]
 
 jobs:
   build:
