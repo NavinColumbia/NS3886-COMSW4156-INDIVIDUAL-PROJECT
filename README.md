@@ -9,7 +9,7 @@
 ##### Link: https://github.com/NavinColumbia/NS3886-COMSW4156-INDIVIDUAL-PROJECT
 ##### Assignment 1 Link: https://github.com/NavinColumbia/4156-Miniproject-2024-Students-Java.git
 ##### branch: main
-##### Demo: 
+##### Video Demo: 
 Click on the thumbnail below [![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/th8dnst3q7a87kize4o7s/thumbnail_2.png?rlkey=pr7k4ayvxemkzwc3tcvrmjm4y&st=mdfmn1wk&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0)
 <br />
 or visit https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
@@ -179,8 +179,8 @@ gcloud app browse
  ```
 &nbsp;
 
-### GCP Demo :
-&emsp;&emsp; Click on the thumbnail below:
+### GCP Demo Video:
+&emsp;&emsp; Click on the thumbnail below to reach mp4 video:
 &emsp;&emsp;[![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/th8dnst3q7a87kize4o7s/thumbnail_2.png?rlkey=pr7k4ayvxemkzwc3tcvrmjm4y&st=96f1j01m&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) <br /> 
 &emsp;  &emsp; or visit the link :<br />
 &emsp;&emsp; https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0 <br />
