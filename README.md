@@ -9,7 +9,7 @@
 ##### Link: https://github.com/NavinColumbia/NS3886-COMSW4156-INDIVIDUAL-PROJECT
 ##### Assignment 1 Link: https://github.com/NavinColumbia/4156-Miniproject-2024-Students-Java.git
 ##### branch: main
-##### Demo: [![thumbnail_gcp_demo](https://www.dropbox.com/scl/fi/16704dnmlhk7w659mkxnj/thumbnail.png?rlkey=uw3u9r054eefi1fm19xcs3gpn&st=g0uy6qbj&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0)
+##### Demo: [![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/16704dnmlhk7w659mkxnj/thumbnail.png?rlkey=uw3u9r054eefi1fm19xcs3gpn&st=g0uy6qbj&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0)
 
 
 
@@ -72,7 +72,7 @@ cd IndividualProject
 mvn checkstyle:check
 ```
 Check console output for errors/warnings/violations.
-![current checkstyle reports 0 violation](https://www.dropbox.com/scl/fi/5gcr3vfpt7xrgzqpknyp8/checkstyle.png?rlkey=dh4y87fqu9vd8th72r16cewet&st=la8otewt&dl=0)
+![current checkstyle reports 0 violation](https://dl.dropbox.com/scl/fi/5gcr3vfpt7xrgzqpknyp8/checkstyle.png?rlkey=dh4y87fqu9vd8th72r16cewet&st=la8otewt&dl=0)
 
 # Code Documentation
 Generate Javadocs
@@ -81,7 +81,7 @@ cd IndividualProject
 mvn javadoc:javadoc
 ```
 Open in browser ./IndividualProject/target/site/apidocs/index.html
-![javadoc generated successfully](https://www.dropbox.com/scl/fi/iafacjcyrrtpa3ub71wvh/javadoc.png?rlkey=a72r7ogn63fbui2m1xcwa7da4&st=ubd4jiui&dl=0)
+![javadoc generated successfully](https://dl.dropbox.com/scl/fi/iafacjcyrrtpa3ub71wvh/javadoc.png?rlkey=a72r7ogn63fbui2m1xcwa7da4&st=ubd4jiui&dl=0)
 # Static Code Analysis
 PMD(mentioned in assignment) was the static analyzer used.
 &nbsp;
@@ -102,7 +102,7 @@ brew install pmd
 &emsp;&emsp;Find file named pmdres.html inside folder 'IndividualProject'.<br />
 &emsp;&emsp;Open the html with any browser or check 'pmdres.txt'.<br />
 &emsp;&emsp;An empty content in either of the file mean no further suggestions.
-![0 pmd violations](https://www.dropbox.com/scl/fi/utdukkbj5u7ywxf1estht/pmd.png?rlkey=nfhcita2utj1ljfnchmxl66p0&st=0cn4qb4g&dl=0)
+![0 pmd violations](https://dl.dropbox.com/scl/fi/utdukkbj5u7ywxf1estht/pmd.png?rlkey=nfhcita2utj1ljfnchmxl66p0&st=0cn4qb4g&dl=0)
 
 # Running Tests and Jacoco Report
 As part of `mvn clean verify` , tests under ./IndividualProject/src/test/java must have been executed.
@@ -112,14 +112,14 @@ As part of `mvn clean verify` , tests under ./IndividualProject/src/test/java mu
 ### Test Reports
 &emsp; &emsp; you can run mvn clean test and view console output <br />
 &emsp; &emsp;From the previously run `mvn clean verify`, find '.txt' files under 'IndividualProject/target/surefire-reports/' to view test results
-![All tests ran successfully](https://www.dropbox.com/scl/fi/3edd1mr4axj33al47mvjx/tests.png?rlkey=ucqo7kama387f0dzzihrklxm1&st=9sj7fo6m&dl=0)
+![All tests ran successfully](https://dl.dropbox.com/scl/fi/3edd1mr4axj33al47mvjx/tests.png?rlkey=ucqo7kama387f0dzzihrklxm1&st=9sj7fo6m&dl=0)
 &nbsp;
 
 ### Jacoco Report
 &emsp; &emsp;you can run mvn clean test package or <br />
 &emsp;&emsp;From the previously run `mvn clean verify` <br />
 &emsp;&emsp;Find file 'index.html' under 'IndividualProject/target/site/jacoco/' and open with any browser to view jacoco results
-![jacoco report shows >90% coverage](https://www.dropbox.com/scl/fi/v84lsix7x2dcwfpn3tyb8/jacoco.png?rlkey=gicmg9d1c2h428hm4tlqc11ia&st=8jeshnt6&dl=0)
+![jacoco report shows >90% coverage](https://dl.dropbox.com/scl/fi/v84lsix7x2dcwfpn3tyb8/jacoco.png?rlkey=gicmg9d1c2h428hm4tlqc11ia&st=8jeshnt6&dl=0)
 
 
 
@@ -164,7 +164,7 @@ gcloud app browse
 
 ### GCP Demo :
 &emsp;&emsp; Click on the thumbnail below:
-&emsp;&emsp;[![thumbnail_gcp_demo](https://www.dropbox.com/scl/fi/16704dnmlhk7w659mkxnj/thumbnail.png?rlkey=uw3u9r054eefi1fm19xcs3gpn&st=g0uy6qbj&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) \.
+&emsp;&emsp;[![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/16704dnmlhk7w659mkxnj/thumbnail.png?rlkey=uw3u9r054eefi1fm19xcs3gpn&st=g0uy6qbj&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) \.
 &emsp;  &emsp; or visit :
 &emsp;&emsp; https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
 
