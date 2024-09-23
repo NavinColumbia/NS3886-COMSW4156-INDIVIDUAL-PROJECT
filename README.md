@@ -166,7 +166,7 @@ gcloud app browse
 
 ### GCP Demo :
 &emsp;&emsp; Click on the thumbnail below:
-&emsp;&emsp;[![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/16704dnmlhk7w659mkxnj/thumbnail.png?rlkey=uw3u9r054eefi1fm19xcs3gpn&st=g0uy6qbj&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) \.
+&emsp;&emsp;[![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/th8dnst3q7a87kize4o7s/thumbnail_2.png?rlkey=pr7k4ayvxemkzwc3tcvrmjm4y&st=96f1j01m&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) \.
 &emsp;  &emsp; or visit :
 &emsp;&emsp; https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
 
