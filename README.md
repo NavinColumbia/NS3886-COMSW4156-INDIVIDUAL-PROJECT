@@ -19,7 +19,7 @@
 https://www.oracle.com/java/technologies/downloads/#java21
 
 ### Install Brew:
-Package Manager for Mac
+Package Manager for Mac <br />
 Refer https://brew.sh/ or do:  
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD install.sh)" .
@@ -30,33 +30,34 @@ For Mac:
 `brew install maven`
 
 ### Git Clone Repo :
-        `git clone https://github.com/NavinColumbia/NS3886-COMSW4156-INDIVIDUAL-PROJECT.git`
+```
+git clone https://github.com/NavinColumbia/NS3886-COMSW4156-INDIVIDUAL-PROJECT.git
+```
 
 ### Set-Up:
-if data.txt does not exist in IndividualProject:
+if data.txt does not exist in IndividualProject: <br />
 &emsp; ensure port 8080 is unoccupied
 ```
 cd IndividualProject
 mvn spring-boot:run -Dspring-boot.run.arguments="setup"
 ```
 Wait till "System Setup" shows up
-Cancel above/any applications running in port 8080 (press control+c)
+Cancel above/any applications running in port 8080 (press control+c).<br />
 Now data.txt must exist in IndividualProject
 
 ### Build:
-
-         ```
-         cd IndividualProject
-         mvn clean verify
-         ```
+```
+cd IndividualProject
+mvn clean verify
+```
 
 ### Running The Application:
-        ```
-            cd IndividualProject 
-            mvn spring-boot:run
-        ```
-      Wait till "Start up" shows up
-      Application must now be Running In: http://localhost:8080/
+```
+cd IndividualProject 
+mvn spring-boot:run
+```
+Wait till "Start up" shows up
+Application must now be Running In: http://localhost:8080/
 
 
 
@@ -98,8 +99,8 @@ brew install pmd
     pmd check -d src/main/java -R rulesets/java/quickstart.xml -f text -r "pmdres.txt"
     pmd check -d src/main/java -R rulesets/java/quickstart.xml -f html -r "pmdres.html"
 ```
-&emsp;&emsp;Find file named pmdres.html inside folder 'IndividualProject'.
-&emsp;&emsp;Open the html with any browser or check 'pmdres.txt'.
+&emsp;&emsp;Find file named pmdres.html inside folder 'IndividualProject'.<br />
+&emsp;&emsp;Open the html with any browser or check 'pmdres.txt'.<br />
 &emsp;&emsp;An empty content in either of the file mean no further suggestions.
 
 
@@ -108,13 +109,13 @@ As part of `mvn clean verify` , tests under ./IndividualProject/src/test/java mu
 
 &nbsp;
 
-###&emsp;Test Reports
+### Test Reports
 
 &emsp; &emsp;Find '.txt' files under 'IndividualProject/target/surefire-reports/' to view test results
 
 &nbsp;
 
-###&emsp;Jacoco Report
+### Jacoco Report
 
 &emsp;&emsp;Find file 'index.html' under 'IndividualProject/target/site/jacoco/' and open with any browser to view jacoco results
 
@@ -124,25 +125,25 @@ As part of `mvn clean verify` , tests under ./IndividualProject/src/test/java mu
 &emsp;&emsp;Login with google sign-in and enter your payment details
 &nbsp;
 
-###Create a new Project in Google Cloud Console:
+### Create a new Project in Google Cloud Console:
 &emsp;&emsp;visit https://console.cloud.google.com/projectselector2
 &emsp;&emsp; and create a project (note your project id)
 &nbsp;
 
-###Install Google Cloud sdk :
+### Install Google Cloud sdk :
 ```
 brew install --cask google-cloud-sdk
 ```
 &nbsp;
 
-###Login and basic setup:
+### Login and basic setup:
 &emsp;&emsp;Follow The steps after entering below in terminal
 ```
 gcloud init
 ```
 &nbsp;
 
-###Update pom.xml:
+### Update pom.xml:
 &emsp;&emsp;under &lt;appengine-maven-plugin&gt; set your project_id in pom to match the one in google cloud.
 ```
 cd IndividualProject
@@ -152,7 +153,7 @@ gcloud app browse
  ```
 &nbsp;
 
-###GCP Demo :
+### GCP Demo :
 &emsp;&emsp;[click here on this link for gcp demo](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) \.
 &emsp;  &emsp; or visit :
 &emsp;&emsp; https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
