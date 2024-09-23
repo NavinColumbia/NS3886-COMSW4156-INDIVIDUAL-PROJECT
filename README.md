@@ -15,6 +15,16 @@ Click on the thumbnail below [![thumbnail_gcp_demo](https://dl.dropbox.com/scl/f
 or visit https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
 
 
+## Note About HyperLinks:
+Links in this ReadMe , are from dropbox. <br />
+'www' urls are purely for view/download purposes
+Replace 'www'' with 'dl' in the event that expected file format for any sort of processing is required <br />
+Say for example to import json for postman directly using the URL  <br />
+&emsp;Use https://dl.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=6iclsah3&dl=0 <br />
+&emsp;Instead of https://www.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=6iclsah3&dl=0 <br />
+
+
+
 # Building and Running a Local Instance
 
 ### Install java( preferred: 17/21):
@@ -180,7 +190,7 @@ gcloud app browse
 &emsp;&emsp; https://www.dropbox.com/scl/fi/qeonw7222mvijuhdk3zyl/Postman_tests_ns3886.postman_collection.json?rlkey=0ji1msxuwpqjcy3iuxvis4q2f&st=x1b8bvoj&dl=0
 &nbsp;
 
-&emsp; 3.Go to 'my workspace' in Postman, click 'import', and select the json
+&emsp; 3.Go to 'my workspace' in Postman, click 'import', and select the downloaded json.<br/>
 &nbsp;
 
 &emsp; &emsp;Please Note that I might have removed my project from <br />
@@ -197,7 +207,7 @@ gcloud app browse
 &emsp;&emsp; Test coverage badge is generated for each run. <br />
 &emsp;&emsp; Go to Actions-> All workflows and click on the most recent workflow. click build for further details. <br />
 sample ss of a workflow:
-![sample image](https://www.dropbox.com/scl/fi/56s6xn52voz6qh7waae4g/ci.png?rlkey=75qgpu1syixk51kjowqj5qzoc&st=8jfb8gfe&dl=0)
+![sample image](https://dl.dropbox.com/scl/fi/56s6xn52voz6qh7waae4g/ci.png?rlkey=75qgpu1syixk51kjowqj5qzoc&st=8jfb8gfe&dl=0)
 
 # Honesty
 Please find honesty.txt at the root of the directory
