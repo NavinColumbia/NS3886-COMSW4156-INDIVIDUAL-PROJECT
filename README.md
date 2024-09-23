@@ -187,7 +187,8 @@ gcloud app browse
 
 ### Google cloud instance Screenshot :
 &emsp;&emsp; Screenshot Of Google Cloud Instance:
-![screenshot_of_instance](https://www.dropbox.com/scl/fi/b664o90adlyt9xwxdrma3/google_cloud_instance.png?rlkey=6771hyrd6egdro2el0129t2ix&st=qufdk99c&dl=0)
+![screenshot_of_instance](https://dl.dropbox.com/scl/fi/b664o90adlyt9xwxdrma3/google_cloud_instance.png?rlkey=6771hyrd6egdro2el0129t2ix&st=qufdk99c&dl=0)
+&emsp;&emsp; or visit https://www.dropbox.com/scl/fi/b664o90adlyt9xwxdrma3/google_cloud_instance.png?rlkey=6771hyrd6egdro2el0129t2ix&st=qufdk99c&dl=0
 
 # Testing EndPoint With Postman
 &emsp; 1.Install Postman  (https://www.postman.com/)
