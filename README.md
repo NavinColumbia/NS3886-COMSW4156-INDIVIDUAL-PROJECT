@@ -182,8 +182,12 @@ gcloud app browse
 ### GCP Demo :
 &emsp;&emsp; Click on the thumbnail below:
 &emsp;&emsp;[![thumbnail_gcp_demo](https://dl.dropbox.com/scl/fi/th8dnst3q7a87kize4o7s/thumbnail_2.png?rlkey=pr7k4ayvxemkzwc3tcvrmjm4y&st=96f1j01m&dl=0)](https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0) <br /> 
-&emsp;  &emsp; or visit :<br />
-&emsp;&emsp; https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0
+&emsp;  &emsp; or visit the link :<br />
+&emsp;&emsp; https://www.dropbox.com/scl/fi/ndnuyz13imok2ncaak33f/ns3886-GCP-Demo.mp4?rlkey=k868b1bosoadsuw2vapey8myy&st=kdv2mjlz&dl=0 <br />
+
+### Google cloud instance Screenshot :
+&emsp;&emsp; Screenshot Of Google Cloud Instance:
+![screenshot_of_instance](https://www.dropbox.com/scl/fi/b664o90adlyt9xwxdrma3/google_cloud_instance.png?rlkey=6771hyrd6egdro2el0129t2ix&st=qufdk99c&dl=0)
 
 # Testing EndPoint With Postman
 &emsp; 1.Install Postman  (https://www.postman.com/)
@@ -315,7 +319,7 @@ Please find citations.txt at the root of the directory
             Http 400 Status Code BAD_REQUEST
             with message "An Error has occurred"
 
-## PATCH /removeMajorToDept
+## PATCH /removeMajorFromDept
     Expected Input:
             deptCode (String) : department code
     On Success:
